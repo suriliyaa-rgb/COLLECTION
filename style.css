@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+.body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+.nav{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    border-bottom:1px solid #ccc;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.nav-icons{
+    display:flex;
+    gap:15px;
+}
+
+.nav-icons a{
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* CHECKOUT */
+
+.checkout{
+    background:white;
+    margin:30px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    border:1px solid #ccc;
+}
+
+.left{
+    width:50%;
+}
+
+.right{
+    width:40%;
+}
+
+.input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0 20px;
+}
+
+.button{
+    padding:12px 25px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid #ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        LATEST COLLECTION
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="product.html">Product</a>
+
+        <a href="checkout.html">Checkout</a>
+
+    </div>
+
+    <div class="nav-icons">
+
+        <a href="checkout.html">🛒</a>
+
+        <a href="#">👤</a>
+
+    </div>
+
+</nav>
+
+<!-- CHECKOUT -->
+
+<section class="checkout">
+
+    <div class="left">
+
+        <h2>ALAMAT PENGHANTARAN</h2>
+
+        <br>
+
+        <label>Nama :</label>
+        <input type="text">
+
+        <label>No Telefon :</label>
+        <input type="text">
+
+        <label>Alamat :</label>
+        <textarea rows="4"></textarea>
+
+    </div>
+
+    <div class="right">
+
+        <h2>RINGKASAN PESANAN</h2>
+
+        <br>
+
+        <p>Premium Cotton Bawal = RM29</p>
+
+        <br>
+
+        <h3>Jumlah = RM29</h3>
+
+        <br>
+
+        <button>BAYAR SEKARANG</button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>2026 | LATEST COLLECTION</p>
+
+    <p>Hubungi Kami 0193766310</p>
+
+    <p>Kebijakan Privasi</p>
+
+    <p>FB | IG</p>
+
+</footer>
+
+</body>
+</html>
