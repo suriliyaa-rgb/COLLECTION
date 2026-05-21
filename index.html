@@ -1,0 +1,269 @@
+<!-- =========================
+FILE : index.html
+PAGE 1 - HOMEPAGE
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Homepage</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVIGATION BAR */
+
+nav{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    border-bottom:1px solid #ccc;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.nav-icons{
+    display:flex;
+    gap:15px;
+}
+
+.nav-icons a{
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* BANNER */
+
+.banner{
+    background:white;
+    margin:20px;
+    padding:80px 20px;
+    text-align:center;
+    border:1px solid #ccc;
+}
+
+.banner button{
+    padding:10px 20px;
+    margin-top:20px;
+}
+
+/* PRODUCTS */
+
+.title{
+    text-align:center;
+    margin-top:40px;
+}
+
+.products{
+    display:flex;
+    justify-content:space-around;
+    margin:40px 20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    text-align:center;
+    border:1px solid #ccc;
+}
+
+.image{
+    height:250px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+button{
+    padding:10px 20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid #ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        LATEST COLLECTION
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="product.html">Product</a>
+
+        <a href="checkout.html">Checkout</a>
+
+    </div>
+
+    <div class="nav-icons">
+
+        <a href="checkout.html">🛒</a>
+
+        <a href="#">👤</a>
+
+    </div>
+
+</nav>
+
+<!-- BANNER -->
+
+<section class="banner">
+
+    <h2>LATEST COLLECTION : "RAYA EXCLUSIVE 2026"</h2>
+
+    <br>
+
+    <p>Material premium, senang bentuk</p>
+
+    <br>
+
+    <a href="product.html">
+        <button>Shop Now</button>
+    </a>
+
+</section>
+
+<h2 class="title">NEW ARRIVALS</h2>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+    <div class="card">
+
+        <div class="image">
+
+            <!-- GAMBAR 1 -->
+            <img src="tudung_cotton.webp">
+
+        </div>
+
+        <h3>Premium Cotton Bawal</h3>
+
+        <br>
+
+        <p>RM 29.00</p>
+
+        <br>
+
+        <a href="product.html">
+            <button>Add To Cart</button>
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <div class="image">
+
+            <!-- GAMBAR 2 -->
+            <img src="satin_bawal.webp">
+
+        </div>
+
+        <h3>Satin Silk Shawl</h3>
+
+        <br>
+
+        <p>RM 45.00</p>
+
+        <br>
+
+        <a href="product.html">
+            <button>Add To Cart</button>
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <div class="image">
+
+            <!-- GAMBAR 3 -->
+            <img src="instant_khimar.webp">
+
+        </div>
+
+        <h3>Instant Khimar</h3>
+
+        <br>
+
+        <p>RM 59.00</p>
+
+        <br>
+
+        <a href="product.html">
+            <button>Add To Cart</button>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>2026 | LATEST COLLECTION</p>
+
+    <p>Hubungi Kami 0193766310</p>
+
+    <p>Kebijakan Privasi</p>
+
+    <p>FB | IG</p>
+
+</footer>
+
+</body>
+</html>

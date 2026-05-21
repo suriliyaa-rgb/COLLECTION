@@ -1,0 +1,199 @@
+<!-- =========================
+FILE : product.html
+PAGE 2 - PRODUCT PAGE
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+nav{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    border-bottom:1px solid #ccc;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.nav-icons{
+    display:flex;
+    gap:15px;
+}
+
+.nav-icons a{
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* PRODUCT */
+
+.container{
+    background:white;
+    margin:30px;
+    padding:40px;
+    display:flex;
+    gap:50px;
+    border:1px solid #ccc;
+}
+
+.product-image{
+    width:350px;
+    height:350px;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.details{
+    flex:1;
+}
+
+button{
+    padding:10px 20px;
+    margin-top:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid #ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        LATEST COLLECTION
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="product.html">Product</a>
+
+        <a href="checkout.html">Checkout</a>
+
+    </div>
+
+    <div class="nav-icons">
+
+        <a href="checkout.html">🛒</a>
+
+        <a href="#">👤</a>
+
+    </div>
+
+</nav>
+
+<!-- PRODUCT -->
+
+<section class="container">
+
+    <div class="product-image">
+
+        <!-- GAMBAR PRODUCT -->
+        <img src="tudung_cotton.webp">
+
+    </div>
+
+    <div class="details">
+
+        <h2>PREMIUM COTTON BAWAL</h2>
+
+        <br>
+
+        <h3>RM 29.00</h3>
+
+        <br>
+
+        <p><b>PILIHAN WARNA :</b></p>
+
+        <br>
+
+        <p>○ Nude ○ Black ○ Khaki ○ Soft Pink</p>
+
+        <br><br>
+
+        <p><b>KUANTITI :</b></p>
+
+        <input type="number" value="1">
+
+        <br>
+
+        <a href="checkout.html">
+            <button>Add To Cart</button>
+        </a>
+
+        <a href="checkout.html">
+            <button>Buy Now</button>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>2026 | LATEST COLLECTION</p>
+
+    <p>Hubungi Kami 0193766310</p>
+
+    <p>Kebijakan Privasi</p>
+
+    <p>FB | IG</p>
+
+</footer>
+
+</body>
+</html>
