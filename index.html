@@ -1,269 +1,201 @@
-<!-- =========================
-FILE : index.html
-PAGE 1 - HOMEPAGE
-========================= -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
 
-<title>Homepage</title>
+        body{
+            background:#f5f5f5;
+        }
 
-<style>
+        /* NAVIGATION BAR */
+        nav{
+            background:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 40px;
+            border-bottom:1px solid #ccc;
+        }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
-}
+        .logo{
+            font-size:22px;
+            font-weight:bold;
+        }
 
-body{
-    background:#f5f5f5;
-}
+        .nav-links{
+            display:flex;
+            gap:30px;
+        }
 
-/* NAVIGATION BAR */
+        .nav-links a{
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+        }
 
-nav{
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    border-bottom:1px solid #ccc;
-}
+        .nav-icons{
+            display:flex;
+            gap:15px;
+        }
 
-.logo{
-    font-size:22px;
-    font-weight:bold;
-}
+        .nav-icons a{
+            text-decoration:none;
+            font-size:20px;
+        }
 
-.nav-links{
-    display:flex;
-    gap:30px;
-}
+        /* BANNER */
+        .banner{
+            background:white;
+            margin:20px;
+            padding:80px 20px;
+            text-align:center;
+            border:1px solid #ccc;
+        }
 
-.nav-links a{
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
-}
+        .banner button{
+            padding:10px 20px;
+            margin-top:20px;
+            cursor: pointer;
+        }
 
-.nav-icons{
-    display:flex;
-    gap:15px;
-}
+        /* PRODUCTS */
+        .title{
+            text-align:center;
+            margin-top:40px;
+        }
 
-.nav-icons a{
-    text-decoration:none;
-    font-size:20px;
-}
+        .products{
+            display:flex;
+            justify-content:space-around;
+            margin:40px 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-/* BANNER */
+        .card{
+            background:white;
+            width:250px;
+            padding:20px;
+            text-align:center;
+            border:1px solid #ccc;
+        }
 
-.banner{
-    background:white;
-    margin:20px;
-    padding:80px 20px;
-    text-align:center;
-    border:1px solid #ccc;
-}
+        .image{
+            height:250px;
+            overflow:hidden;
+            margin-bottom:15px;
+            background: #eee;
+        }
 
-.banner button{
-    padding:10px 20px;
-    margin-top:20px;
-}
+        .image img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
 
-/* PRODUCTS */
+        button{
+            padding:10px 20px;
+            cursor: pointer;
+        }
 
-.title{
-    text-align:center;
-    margin-top:40px;
-}
-
-.products{
-    display:flex;
-    justify-content:space-around;
-    margin:40px 20px;
-}
-
-.card{
-    background:white;
-    width:250px;
-    padding:20px;
-    text-align:center;
-    border:1px solid #ccc;
-}
-
-.image{
-    height:250px;
-    overflow:hidden;
-    margin-bottom:15px;
-}
-
-.image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-button{
-    padding:10px 20px;
-}
-
-/* FOOTER */
-
-footer{
-    background:white;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
-    border-top:1px solid #ccc;
-}
-
-</style>
+        /* FOOTER */
+        footer{
+            background:white;
+            padding:20px;
+            display:flex;
+            justify-content:space-between;
+            border-top:1px solid #ccc;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            LATEST COLLECTION
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+        <div class="nav-icons">
+            <a href="checkout.html">🛒</a>
+            <a href="#">👤</a>
+        </div>
+    </nav>
 
-<nav>
+    <section class="banner">
+        <h2>LATEST COLLECTION : "RAYA EXCLUSIVE 2026"</h2>
+        <br>
+        <p>Material premium, senang bentuk</p>
+        <br>
+        <a href="product.html">
+            <button>Shop Now</button>
+        </a>
+    </section>
 
-    <div class="logo">
-        LATEST COLLECTION
-    </div>
+    <h2 class="title">NEW ARRIVALS</h2>
 
-    <div class="nav-links">
+    <section class="products">
 
-        <a href="index.html">Home</a>
-
-        <a href="product.html">Product</a>
-
-        <a href="checkout.html">Checkout</a>
-
-    </div>
-
-    <div class="nav-icons">
-
-        <a href="checkout.html">🛒</a>
-
-        <a href="#">👤</a>
-
-    </div>
-
-</nav>
-
-<!-- BANNER -->
-
-<section class="banner">
-
-    <h2>LATEST COLLECTION : "RAYA EXCLUSIVE 2026"</h2>
-
-    <br>
-
-    <p>Material premium, senang bentuk</p>
-
-    <br>
-
-    <a href="product.html">
-        <button>Shop Now</button>
-    </a>
-
-</section>
-
-<h2 class="title">NEW ARRIVALS</h2>
-
-<!-- PRODUCTS -->
-
-<section class="products">
-
-    <div class="card">
-
-        <div class="image">
-
-            <!-- GAMBAR 1 -->
-            <img src="tudung_cotton.webp">
-
+        <div class="card">
+            <div class="image">
+                <img src="images/tudung_cotton.jpg" alt="Premium Cotton Bawal">
+            </div>
+            <h3>Premium Cotton Bawal</h3>
+            <br>
+            <p>RM 29.00</p>
+            <br>
+            <a href="product.html">
+                <button>Add To Cart</button>
+            </a>
         </div>
 
-        <h3>Premium Cotton Bawal</h3>
-
-        <br>
-
-        <p>RM 29.00</p>
-
-        <br>
-
-        <a href="product.html">
-            <button>Add To Cart</button>
-        </a>
-
-    </div>
-
-    <div class="card">
-
-        <div class="image">
-
-            <!-- GAMBAR 2 -->
-            <img src="satin_bawal.webp">
-
+        <div class="card">
+            <div class="image">
+                <img src="images/satin_bawal.webp" alt="Satin Silk Shawl">
+            </div>
+            <h3>Satin Silk Shawl</h3>
+            <br>
+            <p>RM 45.00</p>
+            <br>
+            <a href="product.html">
+                <button>Add To Cart</button>
+            </a>
         </div>
 
-        <h3>Satin Silk Shawl</h3>
-
-        <br>
-
-        <p>RM 45.00</p>
-
-        <br>
-
-        <a href="product.html">
-            <button>Add To Cart</button>
-        </a>
-
-    </div>
-
-    <div class="card">
-
-        <div class="image">
-
-            <!-- GAMBAR 3 -->
-            <img src="instant_khimar.webp">
-
+        <div class="card">
+            <div class="image">
+                <img src="images/instant_khimar.webp" alt="Instant Khimar">
+            </div>
+            <h3>Instant Khimar</h3>
+            <br>
+            <p>RM 59.00</p>
+            <br>
+            <a href="product.html">
+                <button>Add To Cart</button>
+            </a>
         </div>
 
-        <h3>Instant Khimar</h3>
+    </section>
 
-        <br>
-
-        <p>RM 59.00</p>
-
-        <br>
-
-        <a href="product.html">
-            <button>Add To Cart</button>
-        </a>
-
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-    <p>2026 | LATEST COLLECTION</p>
-
-    <p>Hubungi Kami 0193766310</p>
-
-    <p>Kebijakan Privasi</p>
-
-    <p>FB | IG</p>
-
-</footer>
+    <footer>
+        <p>2026 | LATEST COLLECTION</p>
+        <p>Hubungi Kami 0193766310</p>
+        <p>Kebijakan Privasi</p>
+        <p>FB | IG</p>
+    </footer>
 
 </body>
 </html>
